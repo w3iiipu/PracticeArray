@@ -22,7 +22,11 @@ public class Main {
         };
 
         for (int i = 0; i < ar.length; i++){
-//            if (ar[i][i] != ar[ar.length-i][ar.length-i]) {    // out of bound index
+/*
+            if (ar[i][i] != ar[ar.length-i][ar.length-i]) {
+           with array length of 4, when ar[0][0] it is checking againts ar[4][4] which is out of bounds.
+            Last index in the array is ar[3][3]
+*/
             if (ar[i][i] != ar[ar.length-1-i][ar.length-1-i]){
               return false;
             }
