@@ -22,6 +22,7 @@ public class Main {
         };
 
         for (int i = 0; i < ar.length; i++){
+//            if (ar[i][i] != ar[ar.length-i][ar.length-i]) {    // out of bound index
             if (ar[i][i] != ar[ar.length-1-i][ar.length-1-i]){
               return false;
             }
